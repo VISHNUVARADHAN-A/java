@@ -1,27 +1,11 @@
+import java.lang.reflect.Array;
+import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.List;
 
-public class variabletype {
+public class arrayandarraylist {
+
     public static void main(String[] args) {
-//int 
-        int MyNumber = 5;
-        System.out.println("this is number " + MyNumber);
-        //string
-        String MyString = "hellow world";
-        System.out.println("this is String " + MyString);
-        
-        // float
-        float MyFloat = 9.5f;
-        System.err.println("this is float " + MyFloat);
-        
-        // double
-        Double MyDouble = 9.5;
-        System.out.println("this is Double " + MyDouble);
-        //boolen
-        boolean MyBoolen = true;
-        System.out.println("this is boolen " + MyBoolen);
-        // char
-        char MyChar = 'a';
-        System.out.println("this is character " + MyChar);
         
         // array
         
@@ -56,7 +40,32 @@ public class variabletype {
         }
         System.out.println("this is array " + Arrays.toString(MyArray1));
         // this is array [5, 4, 3, 2, 1]
-        
-        
+
+
+
+        //Arry list
+        ArrayList<String> a = new ArrayList<String>();
+        a.add("A");
+        a.add("B");
+        a.add("c");
+        System.out.println(a.get(2));
+
+        for(int i=0; i<a.size();i++)
+        {
+            System.out.println(a.get(i));
+        }
+        System.out.println("enanched for loop");
+        for( String val :a)
+        {
+            System.out.println(val);
+        }
+        System.out.println(a.contains("A"));
+        System.out.println(a.contains("C"));
+
+        //conver normal list to array list
+        String[] name = {"A1","B2","C3","D4"};
+        List<String> nameArrayList =Arrays.asList(name);
+        System.out.println(nameArrayList.contains("E5"));
+        System.out.println(nameArrayList.contains("D4"));
     }
 }
