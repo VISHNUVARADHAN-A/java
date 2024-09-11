@@ -4,7 +4,6 @@ public class diffrence_in_print {
             System.out.println("printhing value:"+i);
     
             System.out.printf("printhing :%d\n",i);}
-        
-
+            System.err.println();
     }
 }
